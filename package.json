@@ -1,0 +1,20 @@
+{
+  "name": "node-express-service",
+  "version": "1.0.0",
+  "description": "Handling server express service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm install"
+  },
+  "keywords": [
+    "express",
+    "server",
+    "node"
+  ],
+  "author": "TONTON LA FORCE",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
