@@ -1,0 +1,30 @@
+version : "3"
+
+services:
+  node-express:
+    image: "node:current-alpine3.15"
+    volumes:
+      - D:\Projects\JavascriptProject\node-express-service:/app
+    working_dir: "/app"
+    command: sh -c "npm install && npm start"
+    ports:
+    - 3000:3000
+    container_name: node_webapi
+    networks:
+      - front
+
+
+  docker-service:
+    image: "swaggerapi/swagger-editor"
+    ports:
+    - 3002:8080
+    networks:
+      - front
+    volumes:
+      - D:\Projects\JavascriptProject\node-express-service:/tmp
+    environment:
+      SWAGGER_FILE : /tmp/swagger.yaml
+
+
+networks:
+  front:

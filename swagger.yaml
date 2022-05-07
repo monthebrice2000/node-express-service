@@ -1,0 +1,53 @@
+swagger: "2.0"
+info:
+  description: "This is a sample server Node Express Web API.."
+  version: "1.0.0"
+  title: "Node Express Web API REST"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "monthedjeumoubrice2000@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:3000"
+basePath: "/"
+schemes:
+- "http"
+paths:
+  /:
+    get:
+      tags: 
+      - "welcome"
+      summary: "Get Welcome Message"
+      description: ""
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+        "400":
+          description: "Invalid status value"
+          
+        "500":
+          description: "Internal Server Error"
+  /greeting:
+    get:
+      tags: 
+      - "greeting"
+      summary: "Get Gretting Message"
+      description: ""
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+        "400":
+          description: "Invalid status value"
+          
+        "500":
+          description: "Internal Server Error"
+  
