@@ -3,6 +3,7 @@ I built a node-express web api  from the Docker Image building by A Dockerfile a
 To Test The WEB API : 
 - clone the project in your local PC.
 - move to the root directory of the project
+- change the absolute path root of the directory in .env file
 - run npm install and npm start
 - run docker-compose up
 - to test web API, open navigator and search for URL http://localhost:3000/welcome ( in first )  and http://localhost:3000/greeting ( in second )
